@@ -25,8 +25,13 @@ const bicycles = [
         peso_in_kg: '23',
     },
 ];
+
+console.log(bicycles.peso_in_kg);
 // for loop 
-for ( let i = 0, i < bicycles.length - 1, i++){
+for ( let i = 0 ; i < bicycles.length - 1; i++){
 const {peso_in_kg} = bicycles;
 console.log({peso_in_kg}[i]);
+
+
+
 }
