@@ -1,0 +1,21 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items:center ;
+}
+main{
+    padding: 20px;
+    width: 500px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 800;
+}
