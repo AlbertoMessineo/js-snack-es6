@@ -29,23 +29,20 @@ const bicycles = [
 const bikeWeights = [];
 // for loop 
 for ( let i = 0 ; i < bicycles.length; i++){
-    // console.log(bicycles[i].nome);
-    // console.log(bicycles[i].peso_in_kg);
     const {peso_in_kg} = bicycles[i];
-    // console.log({peso_in_kg});
     let bikeWeight = bicycles[i].peso_in_kg;
     console.log(bikeWeight);
     bikeWeights.push(bikeWeight);
 }
 console.log(bikeWeights);
 const minValue = Math.min(...bikeWeights);
-
+    
 console.log(`Il peso minore è ${minValue}`);
 
 const main = document.querySelector('main');
 const domElement = document.createElement('div');
 
 const domElementContent = `
-<p> Il peso minore tra le bici è ${minValue} chilogrammi, piuttosto leggera!</p>`;
+<p> Il peso minore tra le bici è ${minValue} chilogrammi, ...piuttosto leggera!</p>`;
 domElement.innerHTML = domElementContent;
 main.append(domElement);
