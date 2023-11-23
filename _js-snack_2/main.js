@@ -40,7 +40,7 @@ const teams = [
     },
 
 ];
-
+const pointsFaulsArray = [];
 for (let i = 0; i < teams.length ; i++){
     let {nome} = teams[i];
     let {punti} = teams[i];
@@ -48,11 +48,14 @@ for (let i = 0; i < teams.length ; i++){
     let points = teams[i].punti;
     let fauls = teams[i].falli_ricevuti;
     teams[i].punti = Math.floor(Math.random() * 50);
-    teams[i].falli = Math.floor(Math.random() * 10);
-    
-    console.log(`Il numero di falli ricevuti per la squadra ${nome} è: ${ teams[i].falli}`);
+    teams[i].falli_ricevuti = Math.floor(Math.random() * 10);
+    pointsFaulsArray.push(teams[i].punti);
+    pointsFaulsArray.push(teams[i].falli_ricevuti);
+
+    console.log(`Il numero di falli ricevuti per la squadra ${nome} è: ${ teams[i].falli_ricevuti}`);
     console.log(`il numero di punti totalizzati per la squadra ${nome} è: ${ teams[i].punti}`);
 }
 console.log(teams);
+console.log(pointsFaulsArray);
 
  
